@@ -22,6 +22,7 @@ lazy val root = (project in file("."))
       "tf.tofu"       %% "derevo-cats-tagless"    % "0.12.5",
       "tf.tofu"       %% "derevo-circe-magnolia"  % "0.12.5",
       "tf.tofu"       %% "tofu-core-higher-kind"  % "0.10.2",
+      "org.typelevel" %% "squants"                % "1.8.3"
     ),
     addCompilerPlugin("org.typelevel" % "kind-projector" % "0.13.2" cross CrossVersion.full),
     scalacOptions ++= Seq(
