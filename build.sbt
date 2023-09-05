@@ -12,6 +12,7 @@ lazy val root = (project in file("."))
       "org.typelevel" %% "cats-core"              % "2.6.1",
       "org.typelevel" %% "cats-effect"            % "3.1.1",
       "org.typelevel" %% "cats-mtl"               % "1.2.1",
+      "org.typelevel" %% "log4cats-slf4j"         % "2.3.1",
       "co.fs2"        %% "fs2-core"               % "3.0.3",
       "dev.optics"    %% "monocle-core"           % "3.0.0",
       "dev.optics"    %% "monocle-macro"          % "3.0.0",
@@ -22,7 +23,8 @@ lazy val root = (project in file("."))
       "tf.tofu"       %% "derevo-cats-tagless"    % "0.12.5",
       "tf.tofu"       %% "derevo-circe-magnolia"  % "0.12.5",
       "tf.tofu"       %% "tofu-core-higher-kind"  % "0.10.2",
-      "org.typelevel" %% "squants"                % "1.8.3"
+      "org.typelevel" %% "squants"                % "1.8.3",
+      "com.github.cb372" %% "cats-retry"          % "3.1.0"
     ),
     addCompilerPlugin("org.typelevel" % "kind-projector" % "0.13.2" cross CrossVersion.full),
     scalacOptions ++= Seq(
