@@ -33,6 +33,6 @@ object healthCheck {
   @derive(encoder)
   case class AppStatus(
                       redis: RedisStatus,
-                      postgre: PostgresStatus
+                      postgres: PostgresStatus
                       )
 }
