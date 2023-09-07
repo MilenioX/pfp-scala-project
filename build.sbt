@@ -24,7 +24,11 @@ lazy val root = (project in file("."))
       "tf.tofu"       %% "derevo-circe-magnolia"  % "0.12.5",
       "tf.tofu"       %% "tofu-core-higher-kind"  % "0.10.2",
       "org.typelevel" %% "squants"                % "1.8.3",
-      "com.github.cb372" %% "cats-retry"          % "3.1.0"
+      "com.github.cb372" %% "cats-retry"          % "3.1.0",
+      "org.http4s" %% s"http4s-dsl" % "0.23.1",
+      "org.http4s" %% s"http4s-ember-client" % "0.23.1",
+      "org.http4s" %% s"http4s-ember-server" % "0.23.1",
+      "org.http4s" %% s"http4s-circe" % "0.23.1"
     ),
     addCompilerPlugin("org.typelevel" % "kind-projector" % "0.13.2" cross CrossVersion.full),
     scalacOptions ++= Seq(
