@@ -1,7 +1,7 @@
 package com.mundox.core.services
 
-import com.mundox.core.domain.auth.JwtToken
 import com.mundox.core.domain.user.{Password, User, UserName}
+import dev.profunktor.auth.jwt.JwtToken
 
 trait Auth[F[_]] {
 

@@ -28,7 +28,8 @@ lazy val root = (project in file("."))
       "org.http4s" %% s"http4s-dsl" % "0.23.1",
       "org.http4s" %% s"http4s-ember-client" % "0.23.1",
       "org.http4s" %% s"http4s-ember-server" % "0.23.1",
-      "org.http4s" %% s"http4s-circe" % "0.23.1"
+      "org.http4s" %% s"http4s-circe" % "0.23.1",
+      "dev.profunktor" %% "http4s-jwt-auth" % "1.0.0"
     ),
     addCompilerPlugin("org.typelevel" % "kind-projector" % "0.13.2" cross CrossVersion.full),
     scalacOptions ++= Seq(

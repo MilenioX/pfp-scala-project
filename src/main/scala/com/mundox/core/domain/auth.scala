@@ -1,8 +1,14 @@
 package com.mundox.core.domain
 
-import io.estatico.newtype.macros.newtype
+import com.mundox.core.domain.user.UserName
+
+import scala.util.control.NoStackTrace
 
 object auth {
 
-  @newtype case class JwtToken(value: String)
+  case class UserNotFound(username: UserName) extends NoStackTrace
+  case class UserNameInUse(username: UserName)   extends NoStackTrace
+  case class InvalidPassword(username: UserName) extends NoStackTrace
+
+
 }
